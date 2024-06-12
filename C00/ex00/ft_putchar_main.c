@@ -6,4 +6,6 @@ void ft_putchar(char c){
 
 void main(){
     ft_putchar('A');
+    ft_putchar('a');
+
 }
