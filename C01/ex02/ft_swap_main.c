@@ -36,7 +36,9 @@ void main(){
     ft_putnbr(a);
     write(1,"  b : ",6);
     ft_putnbr(b);
+
     ft_swap(&a,&b);
+    
     write(1," -> ",4);
     write(1,"a : ",4);
     ft_putnbr(a);

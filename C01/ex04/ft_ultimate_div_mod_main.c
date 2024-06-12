@@ -22,22 +22,31 @@ void ft_putnbr(int nb){
     }
     
 }
-void ft_div_mod(int a, int b, int *div, int *mod){
-    *div = a / b ;
-    *mod = a % b ;
+void ft_ultimate_div_mod(int *a, int *b){
+    int div = *a / *b;
+    int mod = *a % *b;
+
+    *a = div;
+    *b = mod;
+
 }
 
 void main(){
     int a = 45;
     int b = 7;
-    int div ;
-    int mod ;
+    write(1,"a : ",4);
+    ft_putnbr(a);
+    write(1,"  b : ",6);
+    ft_putnbr(b);
 
-    ft_div_mod(a,b,&div,&mod);
+    ft_ultimate_div_mod(&a,&b);
     
-    write(1,"div : ",6);
-    ft_putnbr(div);
-    write(1,"  mod : ",8);
-    ft_putnbr(mod);
+    write(1," -> ",4);
+    write(1,"div : ",4);
+    ft_putnbr(a);
+    write(1,"  mod : ",6);
+    ft_putnbr(b);
 
+
+    
 }
