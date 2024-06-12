@@ -16,7 +16,7 @@ void ft_putnbr(int nb){
         c[i++] = (nbl % 10) + '0';
         nbl /= 10;
     }
-    while ( i > 0)
+    while ( i > 0 )
     {
         write(1,&c[--i],1);
     }
