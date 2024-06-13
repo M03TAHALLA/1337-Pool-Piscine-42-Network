@@ -22,32 +22,25 @@ void ft_putnbr(int nb){
     }
     
 }
-int ft_str_is_alpha(char *str){
-    int is_alpha = 1 ;
+int ft_str_is_numeric(char *str){
+    int is_numeric = 1 ; 
     while (*str != '\0')
     {
-        if((*str < 'a' || *str > 'z') && (*str < 'A' || *str > 'Z') ){
-            is_alpha = 0 ;
+        if(*str - '0' < 0 || *str - '0' > 9){
+            is_numeric = 0 ;
         }
-        
-        str = str + 1 ;
+        str = str +1 ;
     }
-    
-    return is_alpha ;
+
+    return is_numeric;
     
 }
-
 void main(){
-    char str[] = "Hello";
-    char str2[] = "Hello5";
-    char str3[] = "Hello&";
+    char str[] = "12368";
+    char str2[] = "123H";
+    char str3[] = "269&";
 
-    ft_putnbr(ft_str_is_alpha(str));
-    ft_putnbr(ft_str_is_alpha(str2));
-    ft_putnbr(ft_str_is_alpha(str3));
-
-
-    
-
-
+    ft_putnbr(ft_str_is_numeric(str));
+    ft_putnbr(ft_str_is_numeric(str2));
+    ft_putnbr(ft_str_is_numeric(str3));
 }
