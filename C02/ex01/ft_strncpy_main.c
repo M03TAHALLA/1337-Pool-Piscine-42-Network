@@ -17,7 +17,7 @@ char *ft_strncpy(char *dest, char *src, unsigned int n){
         j++;
     }
     }else{
-        write(1,"La Taille Depasse Taille Source",31);
+        write(1,"La Taille Depasse Taille Source !",33);
     }
 
     dest[j] = '\0';
