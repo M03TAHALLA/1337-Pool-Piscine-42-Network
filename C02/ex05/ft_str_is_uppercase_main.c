@@ -37,11 +37,12 @@ int ft_str_is_uppercase(char *str){
 }
 
 void main(){
-    char str[] = "hello";
+    char str[] = "";
+    char str1[] = "hello";
     char str2[] = "HELLO";
     char str3[] = "hEllo";
-
     ft_putnbr(ft_str_is_uppercase(str));
+    ft_putnbr(ft_str_is_uppercase(str1));
     ft_putnbr(ft_str_is_uppercase(str2));
     ft_putnbr(ft_str_is_uppercase(str3));
 }

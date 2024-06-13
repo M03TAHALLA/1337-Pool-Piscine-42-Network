@@ -22,27 +22,21 @@ void ft_putnbr(int nb){
     }
     
 }
-int ft_str_is_lowercase(char *str){
-    int is_lowercase = 1 ;
-
+int ft_str_is_printable(char *str){
+    int is_printable = 1 ;
     while (*str != '\0')
     {
-        if(*str < 'a' || *str > 'z'){
-            is_lowercase = 0;
+        if(*str  < 32 || *str > 126){
+            is_printable = 0;
         }
         str = str + 1 ;
     }
-
-    return is_lowercase;
+    return is_printable;
     
 }
+
 void main(){
-     char str[] = "";
-    char str1[] = "hello";
-    char str2[] = "HELLO";
-    char str3[] = "hEllo";
-    ft_putnbr(ft_str_is_lowercase(str));
-    ft_putnbr(ft_str_is_lowercase(str1));
-    ft_putnbr(ft_str_is_lowercase(str2));
-    ft_putnbr(ft_str_is_lowercase(str3));
+    char str[] = "S[a$";
+
+    ft_putnbr(ft_str_is_printable(str));
 }
