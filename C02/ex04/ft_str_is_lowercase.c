@@ -5,7 +5,7 @@ int ft_str_is_lowercase(char *str){
 
     while (*str != '\0')
     {
-        if(*str < 'A' || *str > 'Z'){
+        if(*str < 'a' || *str > 'z'){
             is_lowercase = 0;
         }
         str = str + 1 ;
