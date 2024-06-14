@@ -22,3 +22,11 @@ void ft_putnbr(int nb){
     }
     
 }
+int ft_atoi(char *str){
+    
+}
+
+void main(){
+    char c[] = "   1245";
+    ft_putnbr(ft_atoi(c));
+}

@@ -1,5 +1,4 @@
 #include<unistd.h>
-
 void ft_putnbr(int nb){
     long nbl ;
     nbl = nb ;
@@ -14,13 +13,12 @@ void ft_putnbr(int nb){
     }
     while (nbl > 0)
     {
-        c[i++] = nbl % 10 + "0";
+        c[i++] = (nbl % 10) + '0';
         nbl /= 10;
     }
-    int j = 0;
-    while ( j <= i)
+    while ( i > 0)
     {
-        write(1,&c[j++],1);
+        write(1,&c[--i],1);
     }
     
 }
