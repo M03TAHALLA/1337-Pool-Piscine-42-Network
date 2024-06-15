@@ -23,10 +23,33 @@ void ft_putnbr(int nb){
     
 }
 int ft_atoi(char *str){
+    int sign = 1 ;
+    int result = 0 ;
+    while (*str == 32)
+    {
+        str++;
+    }
+    while (*str == '-' || *str == '+')
+    {
+        if (*str == '-')
+        {
+            sign = -sign ;
+        }
+        str++;
+    }
+
+    while (*str - '0' >= 0 && *str - '0' <= 9 )
+    {
+        result = (result * 10) + (*str - '0') ; 
+        str++;
+    }
+
+    return sign*result;
+    
+    
     
 }
-
 void main(){
-    char c[] = "   1245";
+    char c[] = "    ---+--+123 4ab567";
     ft_putnbr(ft_atoi(c));
 }
