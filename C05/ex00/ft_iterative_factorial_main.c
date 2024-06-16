@@ -24,17 +24,27 @@ void ft_putnbr(int nb){
 }
 int ft_iterative_factorial(int nb){
 
-    int fact = 1 ;
+    unsigned int fact = 1 ;
     int i = 1 ;
+    if(nb > 0){
     while (i <= nb)
     {
         fact = fact * i ;
         i++;
     }
+    }
+    if (nb == 0)
+    {
+        fact = 1 ;
+    }
+    if(nb < 0){
+        fact = 0;
+    }
+
     return fact;
 }
 
 void main(){
-   ft_putnbr(ft_iterative_factorial(12));
+   ft_putnbr(ft_iterative_factorial(0));
    
 }
