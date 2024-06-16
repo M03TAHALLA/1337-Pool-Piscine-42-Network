@@ -58,6 +58,7 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "*.embeddedhtml": "html",
-    "ft_strlen.C": "cpp"
+    "ft_strlen.C": "cpp",
+    "ft_iterative_factorial.C": "cpp"
   }
 }
