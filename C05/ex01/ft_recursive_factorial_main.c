@@ -22,7 +22,7 @@ void ft_putnbr(int nb){
     }
     
 }
-int ft_iterative_factorial(int nb){
+int factorial(int nb){
 
     unsigned int fact = 1 ;
     int i = 1 ;
@@ -33,20 +33,21 @@ int ft_iterative_factorial(int nb){
         i++;
     }
     }
-    if (nb == 0)
-    {
-        fact = 1 ;
-    }
-    if(nb < 0){
-        fact = 0;
-    }
 
     return fact;
 }
+int ft_recursive_factorial(int nb){
 
-void main(){
-   ft_putnbr(ft_iterative_factorial(10));
-   write(1," , ",3);
-   ft_putnbr(ft_iterative_factorial(5));
-   
+    if(nb <= 1){
+        return 1 ;
+    }else{
+        return nb * (factorial(nb-1));
+    }
+
+}
+
+void  main(){
+    ft_putnbr(ft_recursive_factorial(5));
+    write(1," , ",3);
+   ft_putnbr(ft_recursive_factorial(0));
 }
