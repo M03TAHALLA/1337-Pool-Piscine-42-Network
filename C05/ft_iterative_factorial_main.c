@@ -31,9 +31,6 @@ int ft_iterative_factorial(int nb){
         fact = fact * i ;
         i++;
     }
-    
-
-
     return fact;
 }
 
