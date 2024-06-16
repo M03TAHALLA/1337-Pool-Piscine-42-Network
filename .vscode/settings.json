@@ -60,5 +60,6 @@
     "*.embeddedhtml": "html",
     "ft_strlen.C": "cpp",
     "ft_iterative_factorial.C": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
