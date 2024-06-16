@@ -63,4 +63,8 @@ void ft_putnbr(int nb){
 void main(){
 
     ft_putnbr(ft_find_next_prime(8));
+    write(1," , ",3);
+    ft_putnbr(ft_find_next_prime(90));
+    write(1," , ",3);
+    ft_putnbr(ft_find_next_prime(14));
 }
