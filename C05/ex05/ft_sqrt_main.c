@@ -53,5 +53,5 @@ int ft_sqrt(int nb){
 }
 
 void main(){
-    ft_putnbr(ft_sqrt(25));
+    ft_putnbr(ft_sqrt(5));
 }
