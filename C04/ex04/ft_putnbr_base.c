@@ -42,23 +42,3 @@ void ft_putnbr_base(int nbr, char *base) {
     }
 }
 
-int main() {
-    ft_putnbr_base(123, "0123456789");
-    putchar('\n');
-    ft_putnbr_base(-123, "0123456789");
-    putchar('\n');
-    ft_putnbr_base(5, "01");
-    putchar('\n');
-    ft_putnbr_base(-5, "01");
-    putchar('\n');
-    ft_putnbr_base(255, "0123456789ABCDEF");
-    putchar('\n');
-    ft_putnbr_base(-255, "0123456789ABCDEF");
-    putchar('\n');
-    ft_putnbr_base(0, "poneyvif");
-    putchar('\n');
-    ft_putnbr_base(-64, "poneyvif");
-    putchar('\n');
-
-    return 0;
-}
