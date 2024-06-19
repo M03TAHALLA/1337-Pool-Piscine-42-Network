@@ -51,11 +51,11 @@ int main() {
     putchar('\n');
     ft_putnbr_base(-5, "01");
     putchar('\n');
-    ft_putnbr_base(255, "0123456789ABCDEF");
+    ft_putnbr_base(1254862, "01233456789ABCDEF");
     putchar('\n');
     ft_putnbr_base(-255, "0123456789ABCDEF");
     putchar('\n');
-    ft_putnbr_base(0, "poneyvif");
+    ft_putnbr_base(47, "poneyvif");
     putchar('\n');
     ft_putnbr_base(-64, "poneyvif");
     putchar('\n');

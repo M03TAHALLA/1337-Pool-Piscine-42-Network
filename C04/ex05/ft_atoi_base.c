@@ -12,6 +12,7 @@ int ft_strlen(char *str){
     
 }
 int is_valid_base(char *base) {
+
     int len = ft_strlen(base);
     if (len <= 1) return 0;
 
@@ -34,7 +35,7 @@ int ft_atoi_base(char *str, char *base) {
 
     int base_len = ft_strlen(base);
     int i = 0;
-    while (str[i] <= 32) i++; // skip whitespace
+    while (str[i] <= 32) i++; 
 
     int sign = 1;
     while (str[i] == '+' || str[i] == '-') {
